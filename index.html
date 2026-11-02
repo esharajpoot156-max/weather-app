@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width initial-scale = 1.0"/>
+        <title>Weather app</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+       <div class="container">
+        <h1>Weather app</h1>
+        <div class="Search-box">
+            <input type="text" id="city-input" placeholder="Enter the Location"/>
+        <button  id="search-btn"> Search </button>
+        
+        </div>
+        <div id="welcome" class="welcome">
+            <div class="welcome-icon">🌤️</div>
+            <h2>Check the weather</h2>
+            <p>Search for any city to see live weather and a 5-day forecast.</p>
+        </div>
+        <p class="hidden" id="error-msg"></p>
+        <div class="hidden" id="loader"></div>
+        <div class="hidden" id="weather-card">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="weather-icon"/>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <div class="details">
+                <div class="detail">
+                    <span> Humidity </span>
+                    <strong id="humidity"></strong>
+                </div>
+                <div class="detail">
+                    <span>Pressure</span>
+                    <strong id="pressure"></strong>
+                </div>
+                <div class="detail">
+                    <span>Wind</span>
+                    <strong id="wind"></strong>
+                </div>
+            </div>
+            <h3 class="forecast-title">5-Day Forecast</h3>
+                <div id="forecast" class="forecast"></div>
+        </div>
+        </div>
+
+          <script src="script.js"></script>
+          <script src="config.js"></script>
+    </body>
+</html>
